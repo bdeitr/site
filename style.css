@@ -1,0 +1,256 @@
+@font-face {
+  font-family: "myfont";
+  src: url("Font/ABCFavoritEdu-Regular.woff") format('woff');
+  font-weight: medium;
+}
+
+@font-face {
+  font-family: "myfont";
+  src: url("Font/ABCFavoritEdu-RegularItalic.woff") format('woff');
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: "myfont";
+  src: url("Font/ABCFavoritEdu-Bold.woff") format('woff');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "myfont";
+  src: url("Font/ABCFavoritEdu-BoldItalic.woff") format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+body{
+	margin: 0;
+  height: 100%;
+  width: 100%;
+	background-color: rgb(180, 180, 180);
+	font-family: myfont;
+  overscroll-behavior-y: none;
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */ 
+  overflow-y: scroll;
+  }
+::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+  }
+
+
+.header{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(200, 200, 200);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-size: 1.5vw;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(25, 25, 25);
+  text-align: center;
+  padding: 1vw;
+  text-decoration: none;
+}
+
+#red:hover{
+  color: rgb(255, 0, 0);
+}
+#blu:hover{
+  color: rgb(0, 0, 255);
+}
+#green:hover{
+  color: rgb(0, 255, 0);
+}
+
+#redActive{
+  text-decoration: underline;
+  text-underline-offset: 0.2vw;
+}
+#bluActive{
+  text-decoration: underline;
+  text-underline-offset: 0.2vw;
+}
+#greenActive{
+  text-decoration: underline;
+  text-underline-offset: 0.2vw;
+}
+#redActive:hover{
+  
+  color: rgb(255, 0, 0);
+}
+#bluActive:hover{
+  
+  color: rgb(0, 0, 255);
+text-underline-offset: 0.2vw;
+}
+#greenActive:hover{
+ 
+  color: rgb(0, 255, 0);
+  text-underline-offset: 0.2vw;
+}
+
+
+
+
+
+/*GRIGLIA*/
+.grid-container {
+  margin-top: 4%;
+  margin-right: 1%;
+  margin-left: 1%;
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 1%;
+  width: 98%;
+  justify-content: center;
+  overflow: hidden;
+}
+.grid-container > .grid-item{
+  /*column-gap: 50px;
+  row-gap: 50px;*/
+}
+.grid-item > figure {
+  margin: 0px;
+}
+.grid-item > figure > img {
+  max-width: 100%;
+}
+
+.presentation{
+  padding-left: 1%;
+  padding-top: 4vw;
+  width: 49%;
+  text-align: left;
+  text-justify: inter-character;
+  font-weight: medium;
+  font-size: 2.5vw;
+  line-height: 2.6vw;
+}
+.insta{
+  color: black; 
+  text-decoration: none;
+}
+.insta:hover{
+  text-decoration: underline;
+}
+
+
+
+.modal {
+  display: none;
+  position: absolute;
+  position: sticky;
+  overflow-y: scroll;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+}
+
+.modal > figure > img {
+  max-width: 100%;
+}
+
+.close {
+    color: black;
+    float: right;
+    margin-top: 11px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .close:hover {
+    color: black;
+    text-decoration: underline;
+    float: right;
+    margin-top: 11px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+
+/*
+
+/* MEDIUM devices (phones, 600px and down) *
+@media only screen and (max-width: 900px) {
+  .grid-container {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  gap: 1%;
+  width: 100%;
+  justify-content: center;
+  }
+  .presentation{
+  width: 70%;
+  text-align: left;
+  text-justify: inter-character;
+  font-weight: medium;
+  font-size: 3.5vw;
+  line-height: 3.6vw;
+}
+.home a{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 2vw;
+}
+.menu{ 
+  height: 5%;
+  display: flex;
+  flex-direction: row-reverse;
+  width: auto;
+  margin-right:0;
+  font-size: 2vw;
+}
+}
+
+/* Extra small devices (phones, 600px and down) *
+@media only screen and (max-width: 500px) {
+  .grid-container {
+  display: inline-grid;
+  grid-template-columns: 100%;
+  gap: 1%;
+  width: 100%;
+  justify-content: center;
+  } 
+  .presentation{
+  width: 100%;
+  text-align: left;
+  text-justify: inter-character;
+  font-weight: medium;
+  font-size: 5.5vw;
+  line-height: 5.6vw;
+}
+.home a{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 5.5vw;
+}
+.menu{ 
+  height: 6%;
+  display: flex;
+  flex-direction: row-reverse;
+    width: auto;
+    margin-right:0;
+    font-size: 5.5vw;
+}
+.menu a{
+padding-left: 4%;
+}
+}
+
+*/
