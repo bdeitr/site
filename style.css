@@ -186,6 +186,7 @@ text-underline-offset: 0.2vw;
 
 .presentation{
   color: rgb(220, 220, 220);
+  background-color: rgb(20, 20, 20);
   padding-left: 1%;
   padding-top: 5vw;
   width: 49%;
@@ -196,10 +197,11 @@ text-underline-offset: 0.2vw;
   line-height: 2.6vw;
 }
 
-.presentation > p {
-
+.presentation > p { 
+  background-color: rgb(20, 20, 20);
   transform: translateX(102%);
 }
+
 .insta{
   color: rgb(220, 220, 220); 
   text-decoration: none;
