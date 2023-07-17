@@ -31,10 +31,10 @@ body.modal-open {
 
 
 body{
+  background-color: rgb(10, 10, 10);
 	margin: 0;
   height: 100%;
   width: 100%;
-	background-color: rgb(180, 180, 180);
 	font-family: myfont;
   overscroll-behavior-y: none;
   -ms-overflow-style: none; /* for Internet Explorer, Edge */
@@ -57,7 +57,22 @@ body{
   top: 0;
   width: 100%;
   font-size: 1.5vw;
-  z-index: 10;
+  z-index: 99;
+}
+
+.headerphoto{
+  color: rgb(20, 20, 20) !important; 
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(200, 200, 200);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-size: 1.5vw;
+  z-index: 99;
 }
 
 li {
@@ -66,10 +81,16 @@ li {
 
 li a {
   display: block;
-  color: rgb(25, 25, 25);
+  color: rgb(220, 220, 220);
   text-align: center;
   padding: 1vw;
   text-decoration: none;
+}
+
+.menu{
+  width: 50%;
+  display: flex;
+  float: right;
 }
 
 #red:hover{
@@ -80,6 +101,26 @@ li a {
 }
 #green:hover{
   color: rgb(0, 255, 0);
+}
+
+#redF:hover{
+  color: rgb(255, 0, 0);
+}
+#bluF:hover{
+  color: rgb(0, 0, 255);
+}
+#greenF:hover{
+  color: rgb(0, 255, 0);
+}
+
+#redF{
+  color: rgb(20, 20, 20);
+}
+#bluF{
+  color: rgb(20, 20, 20);
+}
+#greenF{
+  color: rgb(20, 20, 20);
 }
 
 #redActive{
@@ -108,10 +149,17 @@ text-underline-offset: 0.2vw;
   color: rgb(0, 255, 0);
   text-underline-offset: 0.2vw;
 }
+#bluActiveF:hover{
+ 
+  color: rgb(0, 0, 255);
+  text-underline-offset: 0.2vw;
+}
 
-
-
-
+#bluActiveF{
+  color: rgb(20, 20, 20);
+  text-decoration: underline;
+  text-underline-offset: 0.2vw;
+}
 
 /*GRIGLIA*/
 .grid-container {
@@ -137,8 +185,9 @@ text-underline-offset: 0.2vw;
 }
 
 .presentation{
+  color: rgb(220, 220, 220);
   padding-left: 1%;
-  padding-top: 4vw;
+  padding-top: 5vw;
   width: 49%;
   text-align: left;
   text-justify: inter-character;
@@ -146,8 +195,13 @@ text-underline-offset: 0.2vw;
   font-size: 2.5vw;
   line-height: 2.6vw;
 }
+
+.presentation > p {
+
+  transform: translateX(102%);
+}
 .insta{
-  color: black; 
+  color: rgb(220, 220, 220); 
   text-decoration: none;
 }
 .insta:hover{
@@ -159,7 +213,7 @@ text-underline-offset: 0.2vw;
 /*carlo*/
 
 .projectsBox {
-  font-size: 2.5vw;
+  font-size: 2vw;
   padding-top: 4.1vw;
   transition: opacity .6s;
   height: calc(100vh - 4vw);
@@ -167,53 +221,72 @@ text-underline-offset: 0.2vw;
   scroll-snap-type: y mandatory;
 }
 .projectsBox> .rigaProject {
-  padding-top: 1vw;
-  padding-bottom: 1vw;
+/*  padding-top: 1vw;
+  padding-bottom: 1vw;*/
   max-height: 80px;
   width: 100%;
-  height: 8%;
+  height: calc(1% + 2vw);
   display: flex;
-  border-top: 1px solid black;
-  /*scroll-snap-align: start;*/
+  /*border-top: 2px solid black;*/
+  scroll-snap-align: 0%;
   cursor: pointer;
+
 }
-/*.projectsBox > .rigaProject:hover {
-  color: rgb(0, 255, 0);
-}*/
 
 .projectsBox > .rigaProject > .info {
   width: 100%;
   margin-left: 1vw;
   display: flex;
   position: relative;
+ height: 100%;
 }
-/*.info > div {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}*/
-
 
 .gallery {
   padding-right: 1vw;
-  width: 49vw;
+  width: 100vw;
   display: none;
-  grid-template-columns: auto auto auto auto auto;
   gap: 1vw;
   overflow: scroll;
   object-fit:cover;
 }
 .gallery > img {
-    display: inline-grid;
   background-color: rgb(200, 200, 200);
+  border: 2px solid black;
+  z-index: 11;
+  position: absolute;
+    display: block;
   cursor: pointer;
   object-fit: cover;
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 50vw;
+  max-height: 50vh;
+ position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+/*
+.project{ 
+  background-color: green;
+    display: none;
+    width: 98%;
+    /* height: 50vh; 
+    padding: 1vw;
+}
+.project > .dida{
+    display: flex;
+    transform: translateX(-50%);
+    width: 50%;
+    font-size: 1.5vw;
 }
 
+.project > .foto{
+    overflow-x: auto;
+    display: flex;
+    width: 100%;
+    height: 30%;
+    gap: 1vw;
+} */
 /*
 
 /* MEDIUM devices (phones, 600px and down) *
@@ -284,3 +357,107 @@ padding-left: 4%;
 }
 
 */
+
+
+
+
+/*PROVE PER BUTTON DIV
+
+.details { background: grey; display: none; }
+.show { display: block; }
+
+HTML
+
+<button data-id="1">button 1</button>
+<button data-id="2">button 2</button>
+<button data-id="3">button 3</button>
+
+<div class="details" data-id="1">
+  <h1>Details Person 1</h1>
+</div>
+
+<div class="details" data-id="2">
+  <h1>Details Person 2</h1>
+</div>
+
+<div class="details" data-id="3">
+  <h1>Details Person 3</h1>
+</div>
+*/
+
+
+
+
+.box{padding-top: 4.1vw;
+  width: 100%;
+}
+
+.progetti{
+
+  padding-top: 15%;
+
+}
+
+.riga{
+  width: 49%;
+  font-size: 1.5vw;
+ background-color: rgb(10, 10, 10);;
+    transform: translateX(100%);
+  padding-left: 1vw;
+color: rgb(220, 220, 220);}
+
+.riga:hover{
+  background-color: rgb(200, 200, 200);
+  color: rgb(20, 20, 20);
+}
+
+#activeX{
+  background-color: rgb(100, 100, 100);
+  color: rgb(20, 20, 20);
+}
+
+
+.project{
+  background-color: rgb(0, 0, 0);
+    display: none;
+    width: 98%;
+    padding: 1vw;
+}
+.project > .dida{
+  padding-top: 1vw;
+  height: auto;
+  color: rgb(220, 220, 220);
+    display: flex;
+  width: 50%;
+    font-size: 1.5vw;
+}
+
+.project > .foto{
+    overflow-x: auto;
+    display: flex;
+    width: 100%;
+    height: 30%;
+    gap: 1vw;
+}
+
+
+.cit{
+color: rgb(220, 220, 220); 
+  text-decoration: none;
+}
+.cit:hover{
+  color: rgb(0, 255, 0);
+  text-decoration: underline;
+}
+
+.wip{
+      font-size: 9.8vw;
+    color: white;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    mix-blend-mode: difference;
+}
