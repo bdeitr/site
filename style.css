@@ -306,21 +306,23 @@ color: rgb(220, 220, 220);
 @media only screen and (max-width: 600px) {
 
 .presentation{
-  /* color: rgb(220, 220, 220); */
-  /* background-color: rgb(20, 20, 20); */
-  /* padding-left: 1%; */
-  margin-top: 5vw;
+  color: rgb(220, 220, 220);
+  background-color: rgb(0, 0, 0);
+  padding-left: 0;
+  padding-top: 18vw;
   width: 80%;
   text-align: left;
   text-justify: inter-character;
   font-weight: medium;
-  font-size: 4.8vw;
-  line-height: 5.3vw;
+  font-size: 5vw;
+  line-height: 5.5vw;
 }
 
 .presentation > p { 
+  padding-left: 2%;
+  padding-right: 2%;
   background-color: rgb(20, 20, 20);
-  transform: none;
+  transform: translateX(25%);
 }
 
 .header{
@@ -333,7 +335,7 @@ color: rgb(220, 220, 220);
   position: fixed;
   top: 0;
   width: 100%;
-  font-size: 3vw;
+  font-size: 4vw;
   z-index: 99;
 }
 
@@ -348,7 +350,7 @@ color: rgb(220, 220, 220);
   position: fixed;
   top: 0;
   width: 100%;
-  font-size: 1.5vw;
+  font-size: 4vw;
   z-index: 99;
 }
 
@@ -360,7 +362,7 @@ li a {
   display: block;
   color: rgb(220, 220, 220);
   text-align: center;
-  padding: 1vw;
+  padding: 2vw;
   text-decoration: none;
 }
 
@@ -368,22 +370,23 @@ li a {
   width: 50%;
   display: flex;
   float: right;
+  justify-content: space-between;
 }
 
 /*WORKS*/
-.box{padding-top: 4.1vw;
+.box{
   width: 100%;
 }
 
 .progetti{
 
-  padding-top: 15%;
+  padding-top: 18vw;
 
 }
 
 .riga{
     width: 79%;
-    font-size: 4.8vw;
+    font-size: 5vw;
     background-color: rgb(20, 20, 20);
     transform: translateX(25%);
     padding-left: 1vw;
@@ -404,16 +407,16 @@ li a {
 .project{
   background-color: rgb(20, 20, 20);
     display: none;
-    width: 98%;
-    padding: 1vw;
+    width: 96%;
+    padding: 2vw;
 }
 .project > .dida{
-  padding-top: 1vw;
+  padding-top: 2vw;
   height: auto;
   color: rgb(220, 220, 220);
     display: flex;
-  width: 80%;
-    font-size: 3vw;
+  width: 100%;
+    font-size: 4vw;
 }
 
 .project > .foto{
