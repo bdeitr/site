@@ -37,12 +37,26 @@ $(this).style.backgroundColor= "#646464";
     }
 
 */
+/*
+function OpenMore(n) {
+  $(".project")[n].style.display = "block";
+  //var info = $(".project");
+   //info[n].style.display = "block";
+    //if (info[n].style.display = "none") {info[n].style.display = "block"};
+
+$(this).toggleClass('aperto');
+};*/
+
 
 function OpenMore(n) {
-  var info = $(".project");
-   // info[n].style.display = "block";
-    if (info[n].style.display = "none") {info[n].style.display = "block"};
+  //$(".project")[n].style.display = "block";
+
+  $($(".project")[n]).toggleClass('aperto');
 };
+
+
+
+//$(this).toggleClass(‘aperto’)
 
 
 /*

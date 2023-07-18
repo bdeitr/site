@@ -288,6 +288,9 @@ color: rgb(220, 220, 220);
 }
 
 
+.aperto{
+  display: block;
+}
 
 
 
@@ -435,6 +438,9 @@ color: rgb(220, 220, 220);
 .cit:hover{
   color: rgb(0, 255, 0);
   text-decoration: underline;
+}
+.aperto{
+  display: block;
 }
 
 
