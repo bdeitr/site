@@ -4,10 +4,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script language="javascript" type="text/javascript" src="script.js"></script>
+  <script language="javascript" type="text/javascript" src="grid.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   </head>
 
-<body style="background-color: rgb(200, 200, 200);">
+  <body style="background-color: rgb(200, 200, 200);">
   <div class="wip">WORK IN PROGRESS</div>
 <div class="headerphoto">
   <li><a id="redF" href="index.html">Matteo Beda</a></li>
@@ -16,51 +19,83 @@
   <li style="float:right"><a id="bluActiveF" href="wip.html">WIP</a></li>
   </div>
 </div>
-  <div class="grid-container">
-      <div class="grid-item">
-        <figure><img src="img/1.jpg"></figure>
+<div class="grid">
+   <div class="grid-item">
+        <img src="img/00WIP/1.jpg">
       </div>
       <div class="grid-item">
-        <figure><img src="img/2.jpg"></figure>
+        <img src="img/00WIP/4.jpg">
       </div>
       <div class="grid-item">
-        <figure><img src="img/3.jpg"></figure>
+        <img src="img/00WIP/8.gif">
       </div>
       <div class="grid-item">
-        <figure><img src="img/4.jpg"></figure>
+        <img src="img/00WIP/2.jpg">
       </div>
       <div class="grid-item">
-        <figure><img src="img/5.jpg"></figure>
+        <img src="img/00WIP/5.gif">
       </div>
       <div class="grid-item">
-        <figure><img src="img/6.jpg"></figure>
+        <img src="img/00WIP/6.jpg">
       </div>
       <div class="grid-item">
-        <figure><img src="img/13.jpg"></figure>
+        <img src="img/00WIP/7.jpg">
       </div>
       <div class="grid-item">
-        <figure><img src="img/8.jpg"></figure>
+        <img src="img/00WIP/13.png">
       </div>
       <div class="grid-item">
-        <figure><img src="img/9.jpg"></figure>
+        <img src="img/00WIP/10.jpg">
       </div>
       <div class="grid-item">
-        <figure><img src="img/15.jpg"></figure>
+        <img src="img/00WIP/9.jpg">
       </div>
       <div class="grid-item">
-        <figure><img src="img/11.jpg"></figure>
+        <img src="img/00WIP/11.gif">
       </div>
       <div class="grid-item">
-        <figure><img src="img/12.jpg"></figure>
+        <img src="img/00WIP/21.jpg">
       </div>
-    </div>
-
+      <div class="grid-item">
+        <img src="img/00WIP/3.jpg">
+      </div>
+      <div class="grid-item">
+        <img src="img/00WIP/14.gif">
+      </div>
+      <div class="grid-item">
+        <img src="img/00WIP/15.jpg">
+      </div>
+      <div class="grid-item">
+        <img src="img/00WIP/16.jpg">
+      </div>
+      <div class="grid-item">
+        <img src="img/00WIP/17.jpg">
+      </div>
+      <div class="grid-item">
+        <img src="img/00WIP/18.jpg">
+      </div>
+      <div class="grid-item">
+        <img src="img/00WIP/19.gif">
+      </div>
+      <div class="grid-item">
+        <img src="img/00WIP/20.jpg">
+      </div>
+      <div class="grid-item">
+        <img src="img/00WIP/23.jpg">
+      </div>
+      <div class="grid-item">
+        <img src="img/00WIP/22.gif">
+      </div>
+      <div class="grid-item">
+        <img src="img/00WIP/12.png">
+      </div>
+</div>
 </body>
 
-
-<!--finestre porgetti
-    <div class="modal">
-      <p class="close" onclick="CloseModal()">&times;</p>
-      <p>pipolo</p>
-        <figure><img src="img/2.jpg"></figure>
-    </div>
+<script>
+$(".grid").imagesLoaded(function() {
+    $(".grid").masonry({
+      itemSelector: ".grid-item"
+    });
+  });
+</script>

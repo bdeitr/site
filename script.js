@@ -55,7 +55,6 @@ function OpenMore(n) {
 };
 
 
-
 //$(this).toggleClass(‘aperto’)
 
 
