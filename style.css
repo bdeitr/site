@@ -214,9 +214,9 @@ text-underline-offset: 0.2vw;
   max-width: 100%;
 }
 
-@media (min-width: 300px) {
+@media (min-width: 200px) {
   .grid-item {
-    width: 50%;
+    width: 100%;
   }
 }
 
