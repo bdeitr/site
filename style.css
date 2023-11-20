@@ -219,7 +219,7 @@ text-underline-offset: 0.2vw;
     width: 100%;
   }
 .grid-item > img {
-    width: 50%;
+    width: 100%;
   }
 }
 
