@@ -253,7 +253,7 @@ text-underline-offset: 0.2vw;
   .grid-item {
     width: 33.3%;
   }
-}*/
+}
 
 .presentation{
   color: rgb(220, 220, 220);
@@ -573,7 +573,6 @@ font-size: 3vw; margin-top: 0;
 
 }
 
-
 .grid {
   text-align: center;
   max-width: 100vw;
@@ -589,5 +588,27 @@ font-size: 3vw; margin-top: 0;
 .grid-item > img {
   max-width: 100%;
 }
+/
+@media (min-width: 500px) {
+  .grid-item {
+    width: 100%;
+  }
+}
 
+@media (min-width: 1000px) {
+  .grid-item {
+    width: 33.3%
+  }
+}
+
+@media (min-width: 1700px) {
+  .grid-item {
+    width: 33.3%;
+  }
+}
+
+@media (min-width: 2100px) {
+  .grid-item {
+    width: 33.3%;
+  }
 }
