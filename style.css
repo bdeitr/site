@@ -213,7 +213,7 @@ text-underline-offset: 0.2vw;
 .grid-item > img {
   max-width: 100%;
 }
-/*
+/
 @media (min-width: 500px) {
   .grid-item {
     width: 50%;
