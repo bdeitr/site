@@ -78,9 +78,9 @@ body{
 
 .star{
   position: absolute;
-  margin: 0;
-  mix-blend-mode: multiply;
-  z-index: 1;
+  margin: 0,0;
+  mix-blend-mode: normal;
+  z-index: 2;
   width: 48%;
 }
  @keyframes rotatingAnimationY {
@@ -94,7 +94,7 @@ body{
   }
 }
 
-.star > img { max-width:100% }
+.star > img { max-height: 100%; max-width:100% }
 
 li {
   float: left;
@@ -214,12 +214,9 @@ text-underline-offset: 0.2vw;
   max-width: 100%;
 }
 
-@media (min-width: 200px) {
+@media (min-width: 500px) {
   .grid-item {
-    width: 100%;
-  }
-.grid-item > img {
-    width: 100%;
+    width: 50%;
   }
 }
 
@@ -277,6 +274,13 @@ text-underline-offset: 0.2vw;
 .progetti{
 
   padding-top: 15%;
+
+}
+
+.collab{
+
+font-size: 1.1vw; 
+margin-top: 0;
 
 }
 
@@ -348,7 +352,7 @@ color: rgb(220, 220, 220);}
 
 .cit{
 color: rgb(220, 220, 220); 
-  text-decoration: none;
+  text-decoration: underline;
 }
 .cit:hover{
   color: rgb(0, 255, 0);
@@ -356,7 +360,8 @@ color: rgb(220, 220, 220);
 }
 
 .wip{
-      font-size: 9.8vw;
+      font-size: 4.8vw;
+      line-height: 80%;
     color: white;
     display: flex;
     width: 100%;
@@ -405,7 +410,7 @@ color: rgb(220, 220, 220);
 .presentation > p { 
   padding-left: 2%;
   padding-right: 2%;
-  background-color: rgb(20, 20, 20);
+  background-color: rgb(35, 35, 35);
   transform: translateX(25%);
 }
 
@@ -422,6 +427,12 @@ color: rgb(220, 220, 220);
   font-size: 4vw;
   z-index: 99;
 }
+.star{
+  position: initial;
+  margin: 0,0;
+  mix-blend-mode: normal;
+  z-index: 2;
+  width: 125%;}
 
 .headerphoto{
   color: rgb(20, 20, 20) !important; 
@@ -437,6 +448,8 @@ color: rgb(220, 220, 220);
   font-size: 4vw;
   z-index: 99;
 }
+
+
 
 li {
   float: left;
@@ -535,6 +548,12 @@ color: rgb(220, 220, 220);
 
 .smallinfo > p{
   margin:0;
+}
+
+.collab{
+
+font-size: 3vw; margin-top: 0;
+
 }
 
 }
